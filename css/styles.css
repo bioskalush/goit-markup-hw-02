@@ -23,10 +23,6 @@ body {
   font-family: "Roboto", "Helvetica Neue", "Verdana", "Tahoma", sans-serif;
 }
 
-a {
-  font-style: normal;
-}
-
 /* Спільні стилі */
 .list {
   list-style: none;
@@ -59,7 +55,7 @@ a {
   color: var(--primary-text-color);
 }
 
-.page-nav a {
+.page-nav .nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -83,12 +79,16 @@ a {
 .footer-contacts.address:focus,
 .footer-contacts.address:hover,
 .portfolio-button:hover,
-.portfolio-button:active {
+.portfolio-button:focus {
+  color: var(--accent-color);
+}
+.page-nav .nav-link.port,
+.page-nav .nav-link.home,
+.page-nav .nav-link.cont {
   color: var(--accent-color);
 }
 
-/* Блок Герой */
-
+/* Блок Герой  */
 .block-hero {
   background-color: var(--footer-color);
 }
@@ -160,6 +160,10 @@ a {
 /* Підвал */
 .footer {
   background-color: var(--footer-color);
+}
+
+.address-styles {
+  font-style: normal;
 }
 
 /* Оформлення ЛОГО у пілвалі */
